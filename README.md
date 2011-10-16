@@ -1,4 +1,4 @@
-# jQuery Pop Window Plugin
+# jQuery Popup Window Plugin
 
 A super simple jQuery plugin for popup windows. Tested in IE7+, FF, Safari and Chrome.
 
