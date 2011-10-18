@@ -9,7 +9,7 @@
             height: 500,
             width: 500,
             toolbar: false,
-            scrollbars: false, // safari always adds scrollbars
+            scrollbars: false, // webkit always adds scrollbars
             status: false,
             resizable: false,
             left: 0,
