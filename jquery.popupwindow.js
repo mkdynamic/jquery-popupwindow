@@ -25,7 +25,7 @@
 
         // center the window
         if (options.center) {
-            options.top = (screen.height - options.height) / 2;
+            options.top = (screen.height - options.height - 50) / 2;
             options.left = (screen.width - options.width) / 2;
         }
 
