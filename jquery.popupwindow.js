@@ -45,7 +45,7 @@
         // open window
         var random = new Date().getTime();
         var name = options.createNew ? 'popup_window_' + random : 'popup_window';
-        var win = window.open(url, name, params.join(','))
+        var win = window.open(url, name, params.join(','));
 
         // unload handler
         if (options.onUnload) {
