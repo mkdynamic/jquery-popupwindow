@@ -48,11 +48,11 @@
         var win = window.open(url, name, params.join(','));
 
         // unload handler
-        if (options.onUnload) {
+        if (options.onUnload && typeof options.onUnload === 'function') {
             var unloadInterval = setInterval(function() {
                 if (!win || win.closed) {
                     clearInterval(unloadInterval);
-                    options.onUnload.call();
+                    options.onUnload();
                 }
             }, 250);
         }
