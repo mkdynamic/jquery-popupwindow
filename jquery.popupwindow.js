@@ -4,24 +4,24 @@
 * Requires: jQuery v1.3.2
 */
 (function($) {
-    $.popupWindow = function(url, options) {
-        var defaults = {
-            height: 500,
-            width: 500,
-            toolbar: false,
-            scrollbars: false, // webkit always adds scrollbars
-            status: false,
-            resizable: false,
-            left: 0,
-            top: 0,
-            center: true,
-            createNew: true,
-            location: false,
-            menubar: false,
-            onUnload: null
-        };
-
-        var options = $.extend({}, defaults, options);
+    var defaults = {
+        height: 500,
+        width: 500,
+        toolbar: false,
+        scrollbars: false, // webkit always adds scrollbars
+        status: false,
+        resizable: false,
+        left: 0,
+        top: 0,
+        center: true,
+        createNew: true,
+        location: false,
+        menubar: false,
+        onUnload: null
+    };
+        
+    $.popupWindow = function(url, opts) {
+        var options = $.extend({}, defaults, opts);
 
         // center the window
         if (options.center) {
