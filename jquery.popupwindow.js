@@ -17,7 +17,8 @@
         createNew: true,
         location: false,
         menubar: false,
-        onUnload: null
+        onUnload: null,
+        name: null // specify custom name for window
     };
         
     $.popupWindow = function(url, opts) {
@@ -44,7 +45,7 @@
 
         // open window
         var random = new Date().getTime();
-        var name = options.createNew ? 'popup_window_' + random : 'popup_window';
+        var name = options.name || (options.createNew ? 'popup_window_' + random : 'popup_window');
         var win = window.open(url, name, params.join(','));
 
         // unload handler
