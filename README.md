@@ -11,7 +11,7 @@ Download the [`jquery.popupwindow.js`](https://github.com/mkdynamic/jquery-popup
 <script src="jquery.popupwindow.js" type="text/javascript"></script>
 ```
 
-Checkout this [example](https://github.com/mkdynamic/jquery-popupwindow/master/example.html).
+Checkout this [example](https://github.com/mkdynamic/jquery-popupwindow/blob/master/example.html).
 
 ## Basic Usage
 
