@@ -56,7 +56,7 @@
                     clearInterval(unloadInterval);
                     options.onUnload();
                 }
-            }, 250);
+            }, 50);
         }
 
         // focus window
