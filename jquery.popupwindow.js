@@ -26,6 +26,7 @@
 
         // center the window
         if (options.center) {
+            // 50px is a rough estimate for the height of the chrome above the document area
             options.top = ((screen.height - options.height) / 2) - 50;
             options.left = (screen.width - options.width) / 2;
         }
