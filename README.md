@@ -11,7 +11,7 @@ Download the [`jquery.popupwindow.js`](https://github.com/mkdynamic/jquery-popup
 <script src="jquery.popupwindow.js" type="text/javascript"></script>
 ```
 
-Checkout this [example](https://github.com/mkdynamic/jquery-popupwindow/raw/master/example.html).
+Checkout this [example](https://github.com/mkdynamic/jquery-popupwindow/master/example.html).
 
 ## Basic Usage
 
@@ -39,6 +39,7 @@ $.popupWindow('http://google.com', {
     top: 100,
     center: false, // auto-center
     createNew: true, // open a new window, or re-use existing popup
+    name: null // specify custom name for window (overrides createNew option)
     location: false,
     menubar: false,
     onUnload: function() { // callback when window closes
