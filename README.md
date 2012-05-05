@@ -39,7 +39,7 @@ $.popupWindow('http://google.com', {
     top: 100,
     center: false, // auto-center
     createNew: true, // open a new window, or re-use existing popup
-    name: null // specify custom name for window (overrides createNew option)
+    name: null, // specify custom name for window (overrides createNew option)
     location: false,
     menubar: false,
     onUnload: function() { // callback when window closes
