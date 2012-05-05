@@ -15,10 +15,10 @@
         top: 0,
         center: true,
         createNew: true,
+        name: null,
         location: false,
         menubar: false,
-        onUnload: null,
-        name: null // specify custom name for window
+        onUnload: null
     };
         
     $.popupWindow = function(url, opts) {
