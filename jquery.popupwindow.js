@@ -8,7 +8,7 @@
         height: 500,
         width: 500,
         toolbar: false,
-        scrollbars: false, // webkit always adds scrollbars
+        scrollbars: false, // os x always adds scrollbars
         status: false,
         resizable: false,
         left: 0,
