@@ -4,16 +4,20 @@
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title>jQuery Popup Window &mdash; Example</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
     <script src="https://github.com/mkdynamic/jquery-popupwindow/raw/master/jquery.popupwindow.js"></script>
     <script type="text/javascript">
+  /* 
+	live() deprecated in jquery 1.7, removed in jquery 1.9, use on() 
+	ref: http://api.jquery.com/live/ 
+	*/
       $(function() {
-        $('a.defaults').live('click', function(event) {
+        $('a.defaults').on('click', function(event) {
           event.preventDefault();
           $.popupWindow('http://google.com');
         });
         
-        $('a.small').live('click', function(event) {
+        $('a.small').on('click', function(event) {
           event.preventDefault();
           $.popupWindow('http://google.com', {
             width: 200,
@@ -21,7 +25,7 @@
           });
         });
         
-        $('a.callback').live('click', function(event) {
+        $('a.callback').on('click', function(event) {
           event.preventDefault();
           $.popupWindow('http://google.com', {
             onUnload: function() {
@@ -70,3 +74,5 @@
       See <a href="https://github.com/mkdynamic/jquery-popupwindow">https://github.com/mkdynamic/jquery-popupwindow</a> for more details.
   </body>
 </html>
+
+ 
