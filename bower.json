@@ -1,0 +1,9 @@
+{
+  "name": "jquery-popupwindow",
+  "version": "1.0.0",
+  "main": "jquery.popupwindow.js",
+  "description": "Simple jQuery plugin for popup windows",
+  "ignore": [
+    "example.html"
+  ]
+}
