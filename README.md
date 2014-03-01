@@ -7,6 +7,14 @@ Chrome.
 
 ## Installation
 
+Get the script via one of the methods below, and add it to your page after
+jQuery:
+
+```html
+<script src="jquery.js"></script>
+<script src="jquery.popupwindow.js"></script>
+```
+
 ### Bower
 
 ```bash
@@ -15,15 +23,7 @@ bower install jquery-popupwindow
 
 ### Manual
 
-Download the [`jquery.popupwindow.js`][script] file to your project, and add to
-your page after including jQuery:
-
-```html
-<script src="jquery.js"></script>
-<script src="jquery.popupwindow.js"></script>
-```
-
-Checkout this [example].
+Download the [`jquery.popupwindow.js`][script] file to your project.
 
 ## Basic Usage
 
@@ -51,6 +51,10 @@ minimal chrome.
 $.popupWindow('http://www.google.com', { height: 300, width: 200 });
 ```
 
+### More Examples
+
+There are more [examples] to look at as well.
+
 ## Options
 
 | option       | type     | default | notes |
@@ -74,4 +78,4 @@ $.popupWindow('http://www.google.com', { height: 300, width: 200 });
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mkdynamic/jquery-popupwindow/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 [script]: https://github.com/mkdynamic/jquery-popupwindow/raw/master/jquery.popupwindow.js
-[example]: https://github.com/mkdynamic/jquery-popupwindow/blob/master/example.html
+[examples]: https://github.com/mkdynamic/jquery-popupwindow/blob/master/example.html
