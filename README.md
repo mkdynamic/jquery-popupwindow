@@ -17,8 +17,8 @@ Download the [`jquery.popupwindow.js`][script] file to your project, and add to
 your page after including jQuery:
 
 ```html
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery.popupwindow.js" type="text/javascript"></script>
+<script src="jquery.js"></script>
+<script src="jquery.popupwindow.js"></script>
 ```
 
 Checkout this [example].
