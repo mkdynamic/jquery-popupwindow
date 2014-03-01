@@ -59,20 +59,20 @@ There are more [examples] to look at as well.
 
 | option       | type     | default | notes |
 |--------------|----------|---------|-------|
-| `height`     | integer  | `500`   |       |
-| `width`      | integer  | `500`   |       |
-| `toolbar`    | boolean  | `false` |       |
-| `scrollbars` | boolean  | `false` | safari always adds scrollbars |
-| `status`     | boolean  | `false` |       |
-| `resizable`  | boolean  | `false` |       |
-| `left`       | integer  | `0`     |       |
-| `top`        | integer  | `0`     |       |
 | `center`     | boolean  | `true`  | auto-center |
 | `createNew`  | boolean  | `true`  | open a new window, or re-use existing popup |
-| `name`       | string   | `null`  | specify custom name for window (overrides createNew option) |
+| `height`     | integer  | `500`   |       |
+| `left`       | integer  | `0`     |       |
 | `location`   | boolean  | `false` |       |
 | `menubar`    | boolean  | `false` |       |
+| `name`       | string   | `null`  | specify custom name for window (overrides createNew option) |
 | `onUnload`   | function | `null`  | callback when window closes |
+| `resizable`  | boolean  | `false` |       |
+| `scrollbars` | boolean  | `false` | safari always adds scrollbars |
+| `status`     | boolean  | `false` |       |
+| `toolbar`    | boolean  | `false` |       |
+| `top`        | integer  | `0`     |       |
+| `width`      | integer  | `500`   |       |
 
 ## License
 

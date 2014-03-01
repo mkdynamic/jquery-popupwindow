@@ -5,20 +5,20 @@
 */
 (function($) {
   var defaults = {
-    height:      500,
-    width:       500,
-    toolbar:     false,
-    scrollbars:  false, // os x always adds scrollbars
-    status:      false,
-    resizable:   false,
-    left:        0,
-    top:         0,
     center:      true,
     createNew:   true,
-    name:        null,
+    height:      500,
+    left:        0,
     location:    false,
     menubar:     false,
-    onUnload:    null
+    name:        null,
+    onUnload:    null,
+    resizable:   false,
+    scrollbars:  false, // os x always adds scrollbars
+    status:      false,
+    toolbar:     false,
+    top:         0,
+    width:       500
   };
 
   $.popupWindow = function(url, opts) {
