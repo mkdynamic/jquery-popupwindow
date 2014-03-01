@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "main": "jquery.popupwindow.js",
   "description": "Simple jQuery plugin for popup windows",
+  "dependencies" : {
+    "jquery" : ">=1.3.2"
+  },
   "ignore": [
     "example.html"
   ]
