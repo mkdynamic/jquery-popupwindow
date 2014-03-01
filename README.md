@@ -14,7 +14,7 @@ your page after including jQuery:
 <script src="jquery.popupwindow.js" type="text/javascript"></script>
 ```
 
-Checkout this [example][2].
+Checkout this [example].
 
 ## Basic Usage
 
