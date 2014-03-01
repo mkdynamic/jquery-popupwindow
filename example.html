@@ -7,12 +7,12 @@
     <script src="jquery.popupwindow.js"></script>
     <script>
       $(function() {
-        $('a.defaults').on('click', function(event) {
+        $('.defaults').on('click', function(event) {
           event.preventDefault();
           $.popupWindow('http://google.com');
         });
 
-        $('a.small').on('click', function(event) {
+        $('.small').on('click', function(event) {
           event.preventDefault();
           $.popupWindow('http://google.com', {
             width: 200,
@@ -20,7 +20,7 @@
           });
         });
 
-        $('a.callback').on('click', function(event) {
+        $('.callback').on('click', function(event) {
           event.preventDefault();
           $.popupWindow('http://google.com', {
             onUnload: function() {
