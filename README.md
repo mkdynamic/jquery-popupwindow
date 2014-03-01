@@ -5,9 +5,16 @@ Chrome.
 
 ## Installation
 
+### Bower
+
+```bash
+bower install jquery-popupwindow
+```
+
+### Manual
+
 Download the [`jquery.popupwindow.js`][script] file to your project, and add to
 your page after including jQuery:
-
 
 ```html
 <script src="jquery.js" type="text/javascript"></script>
