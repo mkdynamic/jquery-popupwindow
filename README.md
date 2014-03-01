@@ -33,20 +33,20 @@ Here's an example showing the full list of the options you can set:
 
 ```javascript
 $.popupWindow('http://google.com', {
-    height: 300,
-    width: 200,
-    toolbar: false,
-    scrollbars: false, // safari always adds scrollbars
-    status: false,
-    resizable: true,
-    left: 100,
-    top: 100,
-    center: false, // auto-center
-    createNew: true, // open a new window, or re-use existing popup
-    name: null, // specify custom name for window (overrides createNew option)
-    location: false,
-    menubar: false,
-    onUnload: function() { // callback when window closes
+    height:      300,
+    width:       200,
+    toolbar:     false,
+    scrollbars:  false, // safari always adds scrollbars
+    status:      false,
+    resizable:   true,
+    left:        100,
+    top:         100,
+    center:      false, // auto-center
+    createNew:   true, // open a new window, or re-use existing popup
+    name:        null, // specify custom name for window (overrides createNew option)
+    location:    false,
+    menubar:     false,
+    onUnload:    function() { // callback when window closes
         alert('Window closed!');
     }
 });
