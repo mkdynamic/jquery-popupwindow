@@ -1,5 +1,7 @@
 # jQuery Popup Window Plugin
 
+[![Bower version](https://badge.fury.io/bo/jquery-popupwindow.png)](http://badge.fury.io/bo/jquery-popupwindow)
+
 A super simple jQuery plugin for popup windows. Tested in IE7+, FF, Safari and
 Chrome.
 
