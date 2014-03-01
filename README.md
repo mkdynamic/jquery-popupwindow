@@ -74,6 +74,9 @@ There are more [examples] to look at as well.
 | `menubar`    | boolean  | `false` |       |
 | `onUnload`   | function | `null`  | callback when window closes |
 
+## License
+
+Released under the MIT License.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mkdynamic/jquery-popupwindow/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
