@@ -61,7 +61,9 @@
     }
 
     // focus window
-    if (win && win.focus) win.focus();
+    if (win && win.focus) {
+      win.focus();
+    }
 
     // return handle to window
     return win;
