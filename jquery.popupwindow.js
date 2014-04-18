@@ -28,8 +28,26 @@
     if (options.center) {
       // 50px is a rough estimate for the height of the chrome above the
       // document area
+      
+      // take into account the current monitor the browser is on
+      // this works in Firefox, Chrome, but in IE there is a bug 
+      // https://connect.microsoft.com/IE/feedback/details/856470/ie11-javascript-screen-height-still-gives-wrong-value-on-secondary-monitor
+
+      // IE reports the primary monitor resolution. So, if you have multiple monitors IE will
+      // ALWAYS return the resolution of the primary monitor. This is a bug, and there is an
+      // open ticket with IE for it. In chrome and firefox it returns the monitor that the
+      // browser is currently located on. If the browser spans multiple monitors, whichever
+      // monitor the browser has the most real estate on, is the monitor it returns the size for.
+
+      // What this means to the end users:
+      // If they have multiple monitors, and their multiple monitors have different resolutions,
+      // and they use internet explorer, and the browser is currently located on a secondary
+      // monitor, the centering will not be perfect as it will be based on the primary monitors
+      // resolution. As you can tell this is pretty edge case.
+      var screenLeft = (typeof window.screenLeft !== 'undefined') ? window.screenLeft : screen.left;
+      
       options.top = ((screen.height - options.height) / 2) - 50;
-      options.left = (screen.width - options.width) / 2;
+      options.left = screenLeft + (screen.width - options.width) / 2;
     }
 
     // params
