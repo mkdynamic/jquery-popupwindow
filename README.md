@@ -59,7 +59,7 @@ There are more [examples] to look at as well.
 
 | option       | type     | default | notes |
 |--------------|----------|---------|-------|
-| `center`     | boolean  | `true`  | auto-center |
+| `center`     | string   | `'screen'`| possible values are: `'screen'`,`'parent'`, and `null`. For backwards compatibility `true`/`false` is still supported, but deprecated, and may be removed in a future version |
 | `createNew`  | boolean  | `true`  | open a new window, or re-use existing popup |
 | `height`     | integer  | `500`   |       |
 | `left`       | integer  | `0`     |       |

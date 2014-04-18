@@ -5,7 +5,7 @@
 */
 (function($) {
   var defaults = {
-    center:      true,
+    center:      "screen", //true, screen || parent || undefined, null, "", false
     createNew:   true,
     height:      500,
     left:        0,
@@ -25,7 +25,10 @@
     var options = $.extend({}, defaults, opts);
 
     // center the window
-    if (options.center) {
+    if (options.center === "parent") {
+      options.top = window.screenY + Math.round(($(window).height() - options.height) / 2);
+      options.left = window.screenX + Math.round(($(window).width() - options.width) / 2);
+    } else if (options.center === true || options.center === "screen") {
       // 50px is a rough estimate for the height of the chrome above the
       // document area
       
