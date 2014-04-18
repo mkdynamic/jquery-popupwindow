@@ -28,7 +28,24 @@
             }
           });
         });
-      })
+        
+        $('a.center-screen').on('click', function(event) {
+          event.preventDefault();
+          $.popupWindow('http://google.com', {
+              width: 400,
+              height: 400,
+              center: 'screen'
+          });
+        });
+
+        $('a.center-parent').on('click', function(event) {
+          event.preventDefault();
+          $.popupWindow('http://google.com', {
+              width: 400,
+              height: 400,
+              center: 'parent'
+          });
+      });
     </script>
   </head>
 
@@ -41,6 +58,8 @@
       <li><a href="#" class="example-defaults">Open window (with defaults)</a></li>
       <li><a href="#" class="example-small">Open window (custom size: 200x200)</a></li>
       <li><a href="#" class="example-callback">Open window (close callback)</a></li>
+      <li><a href="#" class="center-screen">Open window (centered on screen)</a></li>
+      <li><a href="#" class="center-parent">Open window (centered on parent)</a></li>
     </ul>
 
     <h2>More Details</h2>
