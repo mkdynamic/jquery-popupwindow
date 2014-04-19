@@ -74,6 +74,22 @@ There are more [examples] to look at as well.
 | `top`        | integer  | `0`     |       |
 | `width`      | integer  | `500`   |       |
 
+## Notes
+
+### Settings Not Working
+
+Some settings may not work in certain browsers. This is because new browser allow the user to override any setting you pass to window.open.
+
+For Firefox, open a new tab, go to `about:config`, then search for `disable_window_open_feature` to see the different overrides.
+
+### Pop up being blocked
+
+Most browser have pop up blockers installed. If you call a popup WITHOUT user interaction, say on page load, it will be blocked by the popup blocker. If a user was involved, such as a user clicking a button, the blockers will allow the popup. If the popup is blocked your user may not see the notification to allow them to see the pop up, and if they do they will have to choose to perminantly allow or just for that one time. So avoid doing it without the users interaction.
+
+### Same origin
+
+If your pop up does not require user interaction AND they are using chrome AND the url does not pass the same origin policy AND the user refreshes the primary webpage, without closing the popup windows. When you go to show the popup again it will not be brought to the front. The quick fix again is to require user interaction.
+
 ## License
 
 Released under the MIT License.
