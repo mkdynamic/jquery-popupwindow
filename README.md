@@ -94,6 +94,24 @@ Likewise, if your pop up does not require user interaction AND the url DOES pass
 
 The quick fix again is to require user interaction. If you do this, regardless of the url, it will bring the window to the front.
 
+### Mutliple monitors support - Internet Explorer
+
+IE reports the primary monitor resolution. So, if you have multiple monitors IE will
+ALWAYS return the resolution of the primary monitor. This is a bug, and there is an
+open ticket with IE for it. In chrome and firefox it returns the monitor that the
+browser is currently located on. If the browser spans multiple monitors, whichever
+monitor the browser has the most real estate on, is the monitor it returns the size for.
+
+What this means to the end users:
+If they have multiple monitors, and their multiple monitors have different resolutions,
+and they use internet explorer, and the browser is currently located on a secondary
+monitor, and they have `center` set to `'screen'` (the default), centering will not be 
+perfect as it will be based on the primary monitors resolution.
+
+If you believe that could be your target audience, try using `center:'parent'`.
+
+[Here is the ticket](https://connect.microsoft.com/IE/feedback/details/856470/ie11-javascript-screen-height-still-gives-wrong-value-on-secondary-monitor)
+
 ## License
 
 Released under the MIT License.
