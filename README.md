@@ -84,7 +84,7 @@ For Firefox, open a new tab, go to `about:config`, then search for `disable_wind
 
 ### Pop up being blocked
 
-Most browser have pop up blockers installed. If you call a popup WITHOUT user interaction, say on page load, it will be blocked by the popup blocker. If a user was involved, such as a user clicking a button, the blockers will allow the popup. If the popup is blocked your user may not see the notification to allow them to see the pop up, and if they do they will have to choose to perminantly allow or just for that one time. So avoid doing it without the users interaction.
+Most browser have pop up blockers installed. If you call a popup WITHOUT user interaction, say on page load, it will be blocked by the popup blocker. If a user was involved, such as a user clicking a button, the blockers will allow the popup. If the popup is blocked your user may not see the notification to allow them to see the pop up, and if they do they will have to choose to perminantly allow or just for that one time. So avoid doing it without the users interaction. If you would like to do something without user interaction I would suggest a modal window such as [this](http://getbootstrap.com/javascript/#modals) or [that](http://jqueryui.com/dialog/)
 
 ### Same origin
 
