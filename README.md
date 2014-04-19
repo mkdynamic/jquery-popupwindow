@@ -88,7 +88,11 @@ Most browser have pop up blockers installed. If you call a popup WITHOUT user in
 
 ### Same origin
 
-If your pop up does not require user interaction AND they are using chrome AND the url does not pass the same origin policy AND the user refreshes the primary webpage, without closing the popup windows. When you go to show the popup again it will not be brought to the front. The quick fix again is to require user interaction.
+If your pop up does not require user interaction AND the url does NOT pass the same origin policy AND the user refreshes the primary webpage, without closing the popup windows. When you go to show the popup again it will not be brought to the front. 
+
+Likewise, if your pop up does not require user interaction AND the url DOES pass the same origin policy AND the user refreshes the primary webpage, without closing the popup windows. When you go to show the popup again in Chrome it will not be brought to the front, but in Firefox it will be. 
+
+The quick fix again is to require user interaction. If you do this, regardless of the url, it will bring the window to the front.
 
 ## License
 
