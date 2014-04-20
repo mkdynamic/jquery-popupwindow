@@ -117,7 +117,7 @@ Chrome it will not be brought to the front, but in Firefox it will be.
 The quick fix again is to require user interaction. If you do this, regardless
 of the URL, it will bring the window to the front.
 
-### Mutliple monitors support - Internet Explorer
+### Mutliple monitors support: Internet Explorer
 
 IE reports the primary monitor resolution. So, if you have multiple monitors IE
 will *always* return the resolution of the primary monitor. This is a bug, and
