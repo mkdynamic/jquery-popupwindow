@@ -103,15 +103,23 @@ suggest a modal such as [Bootstrap modals] or [jQuery UI Dialog].
 
 ### Same origin
 
-If your popup does not require user interaction *and* the URL _does not_ pass
-the same origin policy *and* the user refreshes the primary webpage, without
-closing the popup windows. When you go to show the popup again it will not be
-brought to the front.
+Your popup will not be brought to the front if:
 
-Likewise, if your popup does not require user interaction *and* the URL _does_
-pass the same origin policy *and* the user refreshes the primary webpage,
-without closing the popup windows. When you go to show the popup again in
-Chrome it will not be brought to the front, but in Firefox it will be.
+  - if the user refreshes the primary webpage without closing the popup windows
+    *and*
+  - and you go to show the popup again *and*
+  - your popup does not require user interaction *and*
+  - the URL _does not_ pass the same origin policy.
+
+
+Likewise, in Chrome (not Firefox), your popup will not be brought to the front
+if:
+
+  - if the user refreshes the primary webpage without closing the popup windows
+    *and*
+  - and you go to show the popup again *and*
+  - your popup does not require user interaction *and*
+  - the URL _does_ pass the same origin policy.
 
 The quick fix again is to require user interaction. If you do this, regardless
 of the URL, it will bring the window to the front.
