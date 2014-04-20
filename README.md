@@ -99,7 +99,7 @@ permanently allow or just for that one time. So avoid creating popups without
 the users interaction. If you would like to do something without user
 interaction I suggest a modal such as [Bootstrap modals] or [jQuery UI Dialog].
 
-[Boostrap modals]:  http://getbootstrap.com/javascript/#modals
+[Bootstrap modals]: http://getbootstrap.com/javascript/#modals
 [jQuery UI Dialog]: http://jqueryui.com/dialog/
 
 ### Same origin
