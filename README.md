@@ -109,7 +109,7 @@ Your popup will not be brought to the front if:
     *and*
   - and you go to show the popup again *and*
   - your popup does not require user interaction *and*
-  - the URL _does not_ pass the same origin policy.
+  - the URL **does not** pass the same origin policy.
 
 
 Likewise, in Chrome (not Firefox), your popup will not be brought to the front
@@ -119,7 +119,7 @@ if:
     *and*
   - and you go to show the popup again *and*
   - your popup does not require user interaction *and*
-  - the URL _does_ pass the same origin policy.
+  - the URL **does** pass the same origin policy.
 
 The quick fix again is to require user interaction. If you do this, regardless
 of the URL, it will bring the window to the front.
