@@ -78,35 +78,56 @@ There are more [examples] to look at as well.
 
 ### Settings Not Working
 
-Some settings may not work in certain browsers. This is because new browser allow the user to override any setting you pass to window.open.
+Some settings may not work in certain browsers. This is because new browser
+allow the user to override any setting you pass to window.open.
 
-For Firefox, open a new tab, go to `about:config`, then search for `disable_window_open_feature` to see the different overrides.
+For Firefox, open a new tab, go to `about:config`, then search for
+`disable_window_open_feature` to see the different overrides.
 
 ### Pop up being blocked
 
-Most browser have pop up blockers installed. If you call a popup WITHOUT user interaction, say on page load, it will be blocked by the popup blocker. If a user was involved, such as a user clicking a button, the blockers will allow the popup. If the popup is blocked your user may not see the notification to allow them to see the pop up, and if they do they will have to choose to perminantly allow or just for that one time. So avoid doing it without the users interaction. If you would like to do something without user interaction I would suggest a modal window such as [this](http://getbootstrap.com/javascript/#modals) or [that](http://jqueryui.com/dialog/)
+Most browser have pop up blockers installed. If you call a popup WITHOUT user
+interaction, say on page load, it will be blocked by the popup blocker. If a
+user was involved, such as a user clicking a button, the blockers will allow
+the popup. If the popup is blocked your user may not see the notification to
+allow them to see the pop up, and if they do they will have to choose to
+perminantly allow or just for that one time. So avoid doing it without the
+users interaction. If you would like to do something without user interaction I
+would suggest a modal window such as
+[this](http://getbootstrap.com/javascript/#modals) or
+[that](http://jqueryui.com/dialog/)
 
 ### Same origin
 
-If your pop up does not require user interaction AND the url does NOT pass the same origin policy AND the user refreshes the primary webpage, without closing the popup windows. When you go to show the popup again it will not be brought to the front. 
+If your pop up does not require user interaction AND the url does NOT pass the
+same origin policy AND the user refreshes the primary webpage, without closing
+the popup windows. When you go to show the popup again it will not be brought
+to the front.
 
-Likewise, if your pop up does not require user interaction AND the url DOES pass the same origin policy AND the user refreshes the primary webpage, without closing the popup windows. When you go to show the popup again in Chrome it will not be brought to the front, but in Firefox it will be. 
+Likewise, if your pop up does not require user interaction AND the url DOES
+pass the same origin policy AND the user refreshes the primary webpage, without
+closing the popup windows. When you go to show the popup again in Chrome it
+will not be brought to the front, but in Firefox it will be.
 
-The quick fix again is to require user interaction. If you do this, regardless of the url, it will bring the window to the front.
+The quick fix again is to require user interaction. If you do this, regardless
+of the url, it will bring the window to the front.
 
 ### Mutliple monitors support - Internet Explorer
 
-IE reports the primary monitor resolution. So, if you have multiple monitors IE will
-ALWAYS return the resolution of the primary monitor. This is a bug, and there is an
-open ticket with IE for it. In chrome and firefox it returns the monitor that the
-browser is currently located on. If the browser spans multiple monitors, whichever
-monitor the browser has the most real estate on, is the monitor it returns the size for.
+IE reports the primary monitor resolution. So, if you have multiple monitors IE
+will ALWAYS return the resolution of the primary monitor. This is a bug, and
+there is an open ticket with IE for it. In chrome and firefox it returns the
+monitor that the browser is currently located on. If the browser spans multiple
+monitors, whichever monitor the browser has the most real estate on, is the
+monitor it returns the size for.
 
 What this means to the end users:
-If they have multiple monitors, and their multiple monitors have different resolutions,
-and they use internet explorer, and the browser is currently located on a secondary
-monitor, and they have `center` set to `'screen'` (the default), centering will not be 
-perfect as it will be based on the primary monitors resolution.
+
+If they have multiple monitors, and their multiple monitors have different
+resolutions, and they use internet explorer, and the browser is currently
+located on a secondary monitor, and they have `center` set to `'screen'` (the
+default), centering will not be perfect as it will be based on the primary
+monitors resolution.
 
 If you believe that could be your target audience, try using `center:'parent'`.
 
