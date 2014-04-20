@@ -25,6 +25,8 @@ bower install jquery-popupwindow
 
 Download the [`jquery.popupwindow.js`][script] file to your project.
 
+[script]: https://github.com/mkdynamic/jquery-popupwindow/raw/master/jquery.popupwindow.js
+
 ## Basic usage
 
 ```javascript
@@ -54,6 +56,8 @@ $.popupWindow('http://www.google.com', { height: 300, width: 200 });
 ### More examples
 
 There are more [examples] to look at as well.
+
+[examples]: https://github.com/mkdynamic/jquery-popupwindow/blob/master/example.html
 
 ## Options
 
@@ -139,6 +143,3 @@ If you believe that could be your target audience, try using `center:'parent'`.
 Released under the MIT License.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mkdynamic/jquery-popupwindow/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-[script]: https://github.com/mkdynamic/jquery-popupwindow/raw/master/jquery.popupwindow.js
-[examples]: https://github.com/mkdynamic/jquery-popupwindow/blob/master/example.html
