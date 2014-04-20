@@ -25,7 +25,7 @@ bower install jquery-popupwindow
 
 Download the [`jquery.popupwindow.js`][script] file to your project.
 
-## Basic Usage
+## Basic usage
 
 ```javascript
 $.popupWindow(url, [options]);
@@ -36,7 +36,7 @@ $.popupWindow(url, [options]);
 | `url`      | string | *Required* URL to open popup to |
 | `options`  | object | *Optional*                      |
 
-### Simple Example
+### Simple example
 
 ```javascript
 $.popupWindow('http://google.com');
@@ -45,13 +45,13 @@ $.popupWindow('http://google.com');
 By default this will open a 500x500 pixel window which is auto-centered and has
 minimal chrome.
 
-### Example with Options
+### Example with options
 
 ```javascript
 $.popupWindow('http://www.google.com', { height: 300, width: 200 });
 ```
 
-### More Examples
+### More examples
 
 There are more [examples] to look at as well.
 
@@ -76,7 +76,7 @@ There are more [examples] to look at as well.
 
 ## Notes
 
-### Settings Not Working
+### Settings not working
 
 Some settings may not work in certain browsers. This is because new browser
 allow the user to override any setting you pass to window.open.
