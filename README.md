@@ -90,14 +90,13 @@ For Firefox, open a new tab, go to `about:config`, then search for
 
 ### Popup blocked
 
-Most browsers have popup blockers. If you create a popup *without* user
-interaction (e.g. on page load), it will be blocked by the popup blocker. If a
-user was involved, such as a user clicking a button, the blockers will allow
-the popup. If the popup is blocked your user may not see the notification to
-allow them to see the pop up, and if they do they will have to choose to
-permanently allow or just for that one time. So avoid creating popups without
-the users interaction. If you would like to do something without user
-interaction I suggest a modal such as [Bootstrap modals] or [jQuery UI Dialog].
+Most browsers will block popups created *without* user interaction (e.g. on
+page load). If the popup is blocked, your user may not notice the notification
+to allow them to see the pop up.
+
+You should only create popups in the same event tick as a user interaction,
+such as a click. If you would like to do something without user interaction, I
+suggest a modal such as [Bootstrap modals] or [jQuery UI Dialog].
 
 [Bootstrap modals]: http://getbootstrap.com/javascript/#modals
 [jQuery UI Dialog]: http://jqueryui.com/dialog/
